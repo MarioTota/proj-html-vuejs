@@ -1,4 +1,61 @@
 header {
   width: 100%;
   height: 80px;
+  background-color: coral;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & img {
+      height: 15px;
+    }
+    & nav {
+      color: $grey_header;
+      display: flex;
+      align-items: baseline;
+      & a {
+        text-transform: uppercase;
+        font-size: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: $grey_header;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .active {
+          width: 20px;
+          height: 2px;
+          background-color: $red_hover;
+          visibility: hidden;
+        }
+        & span {
+          display: inline-block;
+          padding: 0 14px;
+          margin-top: 10px;
+        }
+        & span:last-child {
+          margin-top: 3px;
+        }
+      }
+      & a:hover {
+        color: $red_hover;
+      }
+      & a:hover .active {
+        color: $red_hover;
+        visibility: visible;
+      }
+      & i {
+        font-size: 10px;
+        padding-left: 25px;
+        border-left: 1px solid $grey_header;
+      }
+      & i:hover {
+        color: $red_hover;
+        cursor: pointer;
+      }
+    }
+  }
 }
