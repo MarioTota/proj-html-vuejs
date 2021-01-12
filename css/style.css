@@ -72,3 +72,102 @@ header .wrapper nav i:hover {
   color: #f72b0c;
   cursor: pointer;
 }
+
+#jumbotron {
+  width: 100%;
+  height: 450px;
+  background-image: url("../images/slider-1-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#jumbotron #text_jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#jumbotron #text_jumbotron #conference_on {
+  font-size: 41px;
+  padding-bottom: 15px;
+}
+#jumbotron #text_jumbotron #social_networks {
+  font-size: 65px;
+  font-weight: 900;
+  padding-bottom: 23px;
+}
+#jumbotron #text_jumbotron #white_lane {
+  height: 3px;
+  width: 395px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+#jumbotron #text_jumbotron #dates_conferences {
+  width: 395px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+  font-size: 14px;
+}
+#jumbotron #text_jumbotron #register_btn {
+  width: 159px;
+  height: 42px;
+  background-color: #f72b0c;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 30px;
+}
+#jumbotron #text_jumbotron #register_btn:hover {
+  background-color: #F6523A;
+  cursor: pointer;
+}
+
+#who_we_are {
+  width: 100%;
+  height: 201px;
+}
+#who_we_are .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#who_we_are .who_what_why {
+  width: 295px;
+  height: 201px;
+  display: flex;
+}
+#who_we_are .who_what_why .icon_who {
+  width: 45%;
+  padding-top: 47px;
+  font-size: 21px;
+}
+#who_we_are .who_what_why .icon_who i {
+  color: #9c9c9c;
+}
+#who_we_are .who_what_why .text_who {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+#who_we_are .who_what_why .text_who .title {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+#who_we_are .who_what_why .text_who .paragraph {
+  padding-bottom: 20px;
+  color: #9c9c9c;
+  font-size: 13px;
+}
+#who_we_are .who_what_why .text_who .learn_more {
+  color: #f72b0c;
+  font-size: 13px;
+  text-decoration: none;
+}

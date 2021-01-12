@@ -23,6 +23,39 @@
         </nav>
       </div>
     </header>
+    <main>
+      <div id="jumbotron">
+        <div class="wrapper">
+          <div id="text_jumbotron">
+            <div id="conference_on">conference on</div>
+            <div id="social_networks">social networks</div>
+            <div id="white_lane"></div>
+            <div id="dates_conferences">
+              <span>23 - 26 may 2019</span>
+              <span>/</span>
+              <span>san francisco</span>
+              <span>/</span>
+              <span>8 speakers</span>
+            </div>
+            <div id="register_btn">register online</div>
+          </div>
+        </div>
+      </div>
+      <div id="who_we_are">
+        <div class="wrapper">
+          <div v-for="who in whoWhatWhy" class="who_what_why">
+            <div class="icon_who">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="text_who">
+              <div class="title">{{ who.title }}</div>
+              <p class="paragraph">{{ who.paragraph }}</p>
+              <a class="learn_more" href="#"><em>Learn More</em></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
   <script src="script.js" charset="utf-8"></script>
 </body>

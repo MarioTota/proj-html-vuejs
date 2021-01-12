@@ -34,6 +34,20 @@ var app = new Vue({
         name: 'shortcodes',
         link: 'https://www.jovittorio.com/wp-content/uploads/2018/01/fotografare-paesaggi-1.jpg'
       }
+    ],
+    whoWhatWhy: [
+      {
+        title:'Who we are',
+        paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+      },
+      {
+        title:'What we do',
+        paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+      },
+      {
+        title:'Why us?',
+        paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+      }
     ]
 	},
   methods: {

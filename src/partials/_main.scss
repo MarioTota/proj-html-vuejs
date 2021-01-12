@@ -1,0 +1,97 @@
+#jumbotron {
+  width: 100%;
+  height: 450px;
+  background-image: url("../images/slider-1-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & #text_jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & #conference_on {
+      font-size: 41px;
+      padding-bottom: 15px;
+    }
+    & #social_networks {
+      font-size: 65px;
+      font-weight: 900;
+      padding-bottom: 23px;
+    }
+    & #white_lane {
+      height: 3px;
+      width: 395px;
+      background-color: white;
+      margin-bottom: 10px;
+    }
+    & #dates_conferences {
+      width: 395px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 900;
+      font-size: 14px;
+    }
+    & #register_btn {
+      width: 159px;
+      height: 42px;
+      background-color: $red_hover;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+    & #register_btn:hover {
+      background-color: #F6523A;
+      cursor: pointer;
+    }
+  }
+}
+#who_we_are {
+  width: 100%;
+  height: 201px;
+  & .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  & .who_what_why {
+    width: 295px;
+    height: 201px;
+    display: flex;
+    & .icon_who {
+      width: 45%;
+      padding-top: 47px;
+      font-size: 21px;
+      & i {
+        color: $grey_dusty;
+      }
+    }
+    & .text_who {
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      & .title {
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        font-size: 13px;
+      }
+      & .paragraph {
+        padding-bottom: 20px;
+        color: $grey_dusty;
+        font-size: 13px;
+      }
+      & .learn_more {
+        color: $red_hover;
+        font-size: 13px;
+        text-decoration: none;
+      }
+    }
+  }
+}
