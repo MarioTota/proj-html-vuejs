@@ -1,7 +1,6 @@
 header {
   width: 100%;
   height: 80px;
-  background-color: coral;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,6 +10,9 @@ header {
     justify-content: space-between;
     & img {
       height: 15px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     & nav {
       color: $grey_header;
@@ -35,26 +37,26 @@ header {
           display: inline-block;
           padding: 0 14px;
           margin-top: 10px;
+          &:last-child {
+            margin-top: 3px;
+          }
         }
-        & span:last-child {
-          margin-top: 3px;
+        &:hover {
+          color: $red_hover;
         }
-      }
-      & a:hover {
-        color: $red_hover;
-      }
-      & a:hover .active {
-        color: $red_hover;
-        visibility: visible;
+        &:hover .active {
+          color: $red_hover;
+          visibility: visible;
+        }
       }
       & i {
         font-size: 10px;
         padding-left: 25px;
         border-left: 1px solid $grey_header;
-      }
-      & i:hover {
-        color: $red_hover;
-        cursor: pointer;
+        &:hover {
+          color: $red_hover;
+          cursor: pointer;
+        }
       }
     }
   }
