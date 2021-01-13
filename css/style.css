@@ -6,6 +6,7 @@
 
 .wrapper {
   width: 58%;
+  height: 100%;
   margin: auto;
 }
 
@@ -83,13 +84,15 @@ header .wrapper nav i:hover {
   color: white;
   text-transform: uppercase;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #jumbotron #text_jumbotron {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #jumbotron #text_jumbotron #conference_on {
   font-size: 41px;
@@ -119,6 +122,7 @@ header .wrapper nav i:hover {
   background-color: #f72b0c;
   border-radius: 4px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 12px;
@@ -142,6 +146,7 @@ header .wrapper nav i:hover {
   width: 295px;
   height: 201px;
   display: flex;
+  padding-right: 20px;
 }
 #who_we_are .who_what_why .icon_who {
   width: 45%;
@@ -170,4 +175,156 @@ header .wrapper nav i:hover {
   color: #f72b0c;
   font-size: 13px;
   text-decoration: none;
+}
+
+#countdown {
+  width: 100%;
+  height: 370px;
+  background-image: url(../images/coutdown-bg1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#countdown .wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#countdown .wrapper #days_hours {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 42px;
+}
+#countdown .wrapper #days_hours .days {
+  width: 141px;
+  height: 106px;
+  background-color: #2E2C2C;
+  opacity: 0.9;
+  border-radius: 5px;
+  margin-right: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#countdown .wrapper #days_hours .hours_mins_secs {
+  width: 112px;
+  height: 106px;
+  background-color: #403d3b;
+  opacity: 0.9;
+  border-radius: 5px;
+  margin-right: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#countdown .wrapper #days_hours .number {
+  color: white;
+  font-size: 45px;
+  font-weight: 900;
+  padding-bottom: 3px;
+}
+#countdown .wrapper #days_hours .text_number {
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+}
+#countdown .wrapper #subscribe {
+  text-transform: uppercase;
+  color: #403d3b;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+}
+#countdown .wrapper #form_register {
+  display: flex;
+}
+#countdown .wrapper #form_register input {
+  width: 304px;
+  height: 39px;
+  margin-right: 11px;
+  padding: 16px;
+  font-size: 11px;
+  border: none;
+}
+#countdown .wrapper #form_register input::-moz-placeholder {
+  color: #c6c1bd;
+}
+#countdown .wrapper #form_register input:-ms-input-placeholder {
+  color: #c6c1bd;
+}
+#countdown .wrapper #form_register input::placeholder {
+  color: #c6c1bd;
+}
+#countdown .wrapper #form_register .btn_subscribe {
+  width: 104px;
+  height: 39px;
+  text-transform: uppercase;
+  background-color: #f72b0c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-bottom: 2px solid #4A4A46;
+}
+
+#speakers {
+  width: 100%;
+  height: 378px;
+  background-color: #F3F3F3;
+}
+#speakers #speakers_chevron {
+  padding-top: 63px;
+  padding-bottom: 49px;
+  display: flex;
+  justify-content: space-between;
+}
+#speakers #speakers_chevron #speakers_img {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+#speakers #speakers_chevron #speakers_chevrons {
+  display: flex;
+}
+#speakers #speakers_chevron #speakers_chevrons #chevron_left {
+  width: 26px;
+  height: 26px;
+  background-color: #f72b0c;
+  border-radius: 3px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 7px;
+  cursor: pointer;
+}
+#speakers #speakers_chevron #speakers_chevrons #chevron_right {
+  width: 26px;
+  height: 26px;
+  background-color: #f72b0c;
+  border-radius: 3px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 7px;
+  cursor: pointer;
+}
+#speakers #personages {
+  display: flex;
+  justify-content: space-between;
+}
+#speakers #personages #speakers_faces {
+  width: 191px;
+  height: 202px;
+  background-color: red;
 }

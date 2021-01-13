@@ -37,16 +37,55 @@ var app = new Vue({
     ],
     whoWhatWhy: [
       {
+        icon:'fas fa-trophy',
         title:'Who we are',
         paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
       },
       {
+        icon:'fas fa-bolt',
         title:'What we do',
         paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
       },
       {
+        icon:'fas fa-question',
         title:'Why us?',
         paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+      }
+    ],
+    numbersOfCountdown: [
+      {
+        number: '17',
+        textNumber: 'hours'
+      },
+      {
+        number: '28',
+        textNumber: 'mins'
+      },
+      {
+        number: '17',
+        textNumber: 'secs'
+      }
+    ],
+    speakers: [
+      {
+        photo: 'images/speaker-6.jpg',
+        name: 'patrick spencer',
+        profession: 'S&P Analyzer'
+      },
+      {
+        photo: 'images/speaker-5.jpg',
+        name: 'janet jones',
+        profession: "Newyork Post's GM"
+      },
+      {
+        photo: 'images/speaker-4.jpg',
+        name: 'michael dover',
+        profession: "Starbuck's CEO"
+      },
+      {
+        photo: 'images/speaker-3.jpg',
+        name: 'angelina holy',
+        profession: "Maxii's Manager"
       }
     ]
 	},

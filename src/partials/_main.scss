@@ -2,18 +2,13 @@
   width: 100%;
   height: 450px;
   background-image: url("../images/slider-1-bg.jpg");
-  background-size: cover;
-  background-position: center;
+  @include posizionamento_sfondo;
   text-align: center;
   color: white;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centramento;
   & #text_jumbotron {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include centramento;
     & #conference_on {
       font-size: 41px;
       padding-bottom: 15px;
@@ -41,9 +36,7 @@
       height: 42px;
       background-color: $red_hover;
       border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include centramento;
       font-size: 12px;
       margin-top: 30px;
     }
@@ -65,6 +58,7 @@
     width: 295px;
     height: 201px;
     display: flex;
+    padding-right: 20px;
     & .icon_who {
       width: 45%;
       padding-top: 47px;
@@ -92,6 +86,141 @@
         font-size: 13px;
         text-decoration: none;
       }
+    }
+  }
+}
+#countdown {
+  width: 100%;
+  height: 370px;
+  background-image: url(../images/coutdown-bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  // transform: scale(1.2);
+  & .wrapper {
+    width: 100%;
+    height: 100%;
+    @include centramento;
+    & #days_hours {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 42px;
+      & .days {
+        width: 141px;
+        height: 106px;
+        background-color: #2E2C2C;
+        opacity: 0.9;
+        border-radius: 5px;
+        margin-right: 17px;
+        @include centramento;
+      }
+      & .hours_mins_secs {
+        width: 112px;
+        height: 106px;
+        background-color: $grey_masala;
+        opacity: 0.9;
+        border-radius: 5px;
+        margin-right: 17px;
+        @include centramento;
+      }
+      & .number {
+        @include numeri_del_countdown;
+        font-weight: 900;
+        padding-bottom: 3px;
+      }
+      & .text_number {
+        text-transform: uppercase;
+        color: white;
+        font-size: 13px;
+      }
+    }
+    #subscribe {
+      text-transform: uppercase;
+      color: $grey_masala;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 32px;
+    }
+    #form_register {
+      display: flex;
+      & input {
+        width: 304px;
+        height: 39px;
+        margin-right: 11px;
+        padding: 16px;
+        font-size: 11px;
+        border: none;
+        &::placeholder {
+          color: $grey_cloud;
+        }
+      }
+      & .btn_subscribe {
+        width: 104px;
+        height: 39px;
+        text-transform: uppercase;
+        background-color: $red_hover;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        cursor: pointer;
+        border-bottom: 2px solid #4A4A46;
+      }
+    }
+  }
+}
+#speakers {
+  width: 100%;
+  height: 378px;
+  background-color: #F3F3F3;
+  & #speakers_chevron {
+    padding-top: 63px;
+    padding-bottom: 49px;
+    display: flex;
+    justify-content: space-between;
+    & #speakers_img {
+      text-transform: uppercase;
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    & #speakers_chevrons {
+      display: flex;
+      & #chevron_left {
+        width: 26px;
+        height: 26px;
+        background-color: $red_hover;
+        border-radius: 3px;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 7px;
+        cursor: pointer;
+      }
+      & #chevron_right {
+        width: 26px;
+        height: 26px;
+        background-color: $red_hover;
+        border-radius: 3px;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 7px;
+        cursor: pointer;
+      }
+    }
+  }
+  & #personages {
+    display: flex;
+    justify-content: space-between;
+    & #speakers_faces {
+      width: 191px;
+      height: 202px;
+      background-color: red;
     }
   }
 }

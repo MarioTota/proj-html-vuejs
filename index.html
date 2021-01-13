@@ -45,12 +45,47 @@
         <div class="wrapper">
           <div v-for="who in whoWhatWhy" class="who_what_why">
             <div class="icon_who">
-              <i class="fas fa-trophy"></i>
+              <i :class="who.icon"></i>
             </div>
             <div class="text_who">
               <div class="title">{{ who.title }}</div>
               <p class="paragraph">{{ who.paragraph }}</p>
               <a class="learn_more" href="#"><em>Learn More</em></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="countdown">
+        <div class="wrapper">
+          <div id="days_hours">
+            <div class="days">
+              <div class="number">3399</div>
+              <div class="text_number">days</div>
+            </div>
+            <div class="hours_mins_secs" v-for="block_countdown in numbersOfCountdown">
+              <div class="number">{{ block_countdown.number }}</div>
+              <div class="text_number">{{ block_countdown.textNumber }}</div>
+            </div>
+          </div>
+          <div id="subscribe">subscribe for updates</div>
+          <div id="form_register">
+            <input type="text" placeholder="Please fill your email">
+            <div class="btn_subscribe">subscribe</div>
+          </div>
+        </div>
+      </div>
+      <div id="speakers">
+        <div class="wrapper">
+          <div id="speakers_chevron">
+            <div id="speakers_img">speakers</div>
+            <div id="speakers_chevrons">
+              <div id="chevron_left"><i class="fas fa-chevron-left"></i></div>
+              <div id="chevron_right"><i class="fas fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div id="personages">
+            <div id="speakers_faces" v-for="personage in speakers">
+              <img :src="" alt="">
             </div>
           </div>
         </div>

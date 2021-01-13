@@ -3,3 +3,19 @@
   display: table;
   clear: both;
 }
+@mixin posizionamento_sfondo {
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin centramento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin numeri_del_countdown {
+  color: white;
+  font-size: 45px;
+}
