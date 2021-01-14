@@ -193,6 +193,35 @@ var app = new Vue({
       'images/banner-4.jpg',
       'images/banner-5.jpg',
       'images/banner-6.jpg'
+    ],
+    socials: [
+      'fab fa-facebook-f',
+      'fab fa-twitter',
+      'fab fa-linkedin-in',
+      'fab fa-google-plus-g',
+      'fab fa-pinterest-p',
+      'fas fa-ellipsis-h'
+    ],
+    listNews: [
+      'Lorem ipsum dolor sit',
+      'consectetur adipisicing elit',
+      'sed do eiusmod tempor ',
+      'Ut enim ad minim veniam',
+      'sunt in culpa qui '
+    ],
+    gallery: [
+      'images/tazzecoffee.jpg',
+      'images/codino.jpg',
+      'images/felpagialla.jpg',
+      'images/assemblea.jpg',
+      'images/photodune-8797753-multiethnic-people-with-startup-business-t2.jpg',
+      'images/card04-150x150.jpg',
+      'images/photodune-6745606-man-wristwatch-calendar-key-and-glasses-on.jpg',
+      'images/photodune-6745585-modern-creative-workspace-m-150x150.jpg',
+      'images/6426608875_186070f8ca_o-150x150.jpg',
+      'images/carte.jpg',
+      'images/13349065283_64d09b067c_o-150x150.jpg',
+      'images/photodune-8795110-overhead-of-essentials-denim-clothes-m-150.jpg'
     ]
 	},
   methods: {

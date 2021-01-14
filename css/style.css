@@ -10,6 +10,18 @@
   margin: auto;
 }
 
+.btn_subscribe {
+  text-transform: uppercase;
+  background-color: #f72b0c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-bottom: 2px solid #4A4A46;
+}
+
 header {
   width: 100%;
   height: 80px;
@@ -262,17 +274,7 @@ header .wrapper nav i:hover {
   color: #c6c1bd;
 }
 #countdown .wrapper #form_register .btn_subscribe {
-  width: 104px;
-  height: 39px;
-  text-transform: uppercase;
-  background-color: #f72b0c;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  cursor: pointer;
-  border-bottom: 2px solid #4A4A46;
+  padding: 0 18px;
 }
 
 #speakers {
@@ -647,15 +649,10 @@ header .wrapper nav i:hover {
 #tickets {
   width: 100%;
   height: 513px;
-  background-image: url("../images/personequadri.jpg");
-  background-position: center;
+  background-image: url("../images/ticket-bg.jpg");
+  background-position: top;
 }
-#tickets .layover {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-#tickets .layover .wrapper {
+#tickets .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -841,19 +838,22 @@ footer #footer_top {
   display: flex;
   justify-content: space-between;
 }
-footer #footer_top > div {
+footer #footer_top #about_us,
+footer #footer_top #recent_news,
+footer #footer_top #get_seat,
+footer #footer_top #gallery {
   width: 192px;
 }
 footer #footer_top h6 {
   text-transform: uppercase;
   color: white;
   margin-top: 45px;
-  margin-bottom: 27px;
+  margin-bottom: 18px;
   opacity: 0.7;
 }
 footer #footer_top p {
   color: white;
-  opacity: 0.7;
+  opacity: 0.4;
   font-size: 13px;
   margin-bottom: 27px;
 }
@@ -866,4 +866,46 @@ footer #footer_top #about_us #icons_social .icon {
   background-color: white;
   border-radius: 3px;
   margin-right: 10px;
+  font-size: 13px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer #footer_top #about_us #icons_social .icon:last-child {
+  font-size: 23px;
+  justify-content: center;
+  align-items: baseline;
+}
+footer #footer_top #recent_news .single_news {
+  margin-bottom: 5px;
+}
+footer #footer_top #recent_news .single_news .fas.fa-chevron-right {
+  color: white;
+  font-size: 6px;
+  margin-right: 9px;
+  opacity: 0.4;
+}
+footer #footer_top #recent_news .single_news span:last-child {
+  text-transform: uppercase;
+  opacity: 0.2;
+  font-size: 10px;
+  color: white;
+}
+footer #footer_top #get_seat .btn_subscribe {
+  width: 128px;
+  padding: 7px 1px;
+  font-size: 10px;
+}
+footer #footer_top #gallery_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer #footer_top #gallery_container img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 4px;
 }

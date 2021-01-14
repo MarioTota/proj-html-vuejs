@@ -154,17 +154,7 @@
         }
       }
       & .btn_subscribe {
-        width: 104px;
-        height: 39px;
-        text-transform: uppercase;
-        background-color: $red_hover;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        cursor: pointer;
-        border-bottom: 2px solid #4A4A46;
+        padding: 0 18px;
       }
     }
   }
@@ -512,15 +502,10 @@
 #tickets {
   width: 100%;
   height: 513px;
-  background-image: url('../images/personequadri.jpg');
-  background-position: center;
-  & .layover {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    & .wrapper {
-      @include centramento;
-    }
+  background-image: url('../images/ticket-bg.jpg');
+  background-position: top;
+  & .wrapper {
+    @include centramento;
   }
   & #ticket_title {
     @include title_big;

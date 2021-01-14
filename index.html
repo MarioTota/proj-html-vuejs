@@ -188,8 +188,7 @@
         </div>
       </div>
       <div id="tickets">
-        <div class="layover">
-          <div class="wrapper">
+        <div class="wrapper">
             <div id="ticket_title">tickets</div>
             <div id="tickets_wallet">
               <div class="single_ticket" v-for="ticket,index in ticketsOnSale">
@@ -207,7 +206,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
       <div id="presentation">
         <div class="wrapper">
@@ -239,9 +237,7 @@
             , sed do eiusmod tempor.
           </div>
           <div id="sponsors_container">
-            <div class="sponsors_block" v-for="block in blocks" v-bind:style="{ backgroundImage:'url('+ block +')'}">
-              <!-- <img :src="block" alt=""> -->
-            </div>
+            <div class="sponsors_block" v-for="block in blocks" v-bind:style="{ backgroundImage:'url('+ block +')'}"></div>
           </div>
         </div>
       </div>
@@ -253,20 +249,28 @@
             <h6>about us</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
             <div id="icons_social">
-              <div class="icon"></div>
+              <div v-for="icon in socials" :class="icon" class="icon"></div>
             </div>
           </div>
           <div id="recent_news">
             <h6>recent news</h6>
-
+            <div class="single_news" v-for="news in listNews">
+              <span class="fas fa-chevron-right"></span>
+              <a href="#"><span>{{ news }}</span></a>
+            </div>
           </div>
           <div id="get_seat">
             <h6>get your seat!</h6>
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="btn_subscribe">
+              check out tickets!
+            </div>
           </div>
           <div id="gallery">
             <h6>gallery from last year</h6>
-
+            <div id="gallery_container">
+              <img v-for="pic in gallery" :src="pic" alt="">
+            </div>
           </div>
         </div>
         <div id="footer_bottom">
