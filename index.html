@@ -192,9 +192,9 @@
           <div class="wrapper">
             <div id="ticket_title">tickets</div>
             <div id="tickets_wallet">
-              <div class="single_ticket" v-for="ticket in ticketsOnSale">
+              <div class="single_ticket" v-for="ticket,index in ticketsOnSale">
                 <div class="price_block">
-                  <div class="featured">Featured!</div>
+                  <div class="featured" v-if="index == 1">Featured!</div>
                   <div class="passes_days">{{ ticket.days }}</div>
                   <div class="price_days">{{ ticket.price }}</div>
                 </div>
