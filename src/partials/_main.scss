@@ -11,7 +11,8 @@
     @include centramento;
     & #conference_on {
       font-size: 41px;
-      padding-bottom: 15px;
+      margin-top: 103px;
+      margin-bottom: 15px;
     }
     & #social_networks {
       font-size: 65px;
@@ -123,14 +124,15 @@
         @include centramento;
       }
       & .number {
-        @include numeri_del_countdown;
+        color: white;
+        font-size: 43px;
         font-weight: 900;
         padding-bottom: 3px;
       }
       & .text_number {
         text-transform: uppercase;
         color: white;
-        font-size: 13px;
+        font-size: 11px;
       }
     }
     #subscribe {
@@ -174,8 +176,8 @@
   height: 378px;
   background-color: #F3F3F3;
   & #speakers_chevron {
-    padding-top: 63px;
-    padding-bottom: 49px;
+    padding-top: 60px;
+    padding-bottom: 43px;
     display: flex;
     justify-content: space-between;
     & #speakers_img {
@@ -220,7 +222,133 @@
     & #speakers_faces {
       width: 191px;
       height: 202px;
-      background-color: red;
+      & img {
+        width: 191px;
+      }
+      & #personage_name {
+        margin-top: 14px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 13px;
+      }
+      & #personage_profession {
+        text-align: center;
+        font-size: 12px;
+        color: $grey_header;
+      }
+    }
+  }
+}
+#program {
+  width: 100%;
+  height: 467px;
+  & #program_container_top {
+    width: 100%;
+    margin-top: 95px;
+    margin-bottom: 43px;
+    @include clearfix;
+    & #program_img {
+      @include title_big;
+      float: left;
+      margin-right: 47px;
+    }
+    & p {
+      float: left;
+      color: $grey_header;
+      font-size: 14px;
+    }
+    & a {
+      text-decoration: none;
+      color: $red_hover;
+      float: right;
+      font-size: 13px;
+      line-height: 34px;
+    }
+  }
+  & #program_container_bottom {
+    width: 100%;
+    height: 268px;
+    margin-top: 51px;
+    & #days_list {
+      width: 100%;
+      display: flex;
+      color: white;
+      & #program_single_day {
+        width: calc(100% / 6);
+        background-color: $red_hover;
+        height: 53px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        & #program_day_n {
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: bold;
+        }
+        & #program_day_date {
+          font-size: 12px;
+          opacity: 0.8;
+        }
+        &:first-child {
+          background-color: #bf351f;
+        }
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          border-right: 1px solid rgba(39, 39, 39, 0.3);
+        }
+      }
+    }
+    & #welcoming {
+      width: 100%;
+      height: 100%;
+      background-color: #f3f3f3;
+      display: flex;
+      & #location_apointment {
+        width: 29%;
+        margin-top: 46px;
+        margin-left: 37px;
+        & i {
+          color: #868686;
+          margin-right:16px;
+          margin-bottom:17px;
+          font-size: 13px;
+        }
+        & div span {
+          font-size: 12px;
+          color: #868686;
+        }
+        & div:last-child span {
+          color: $red_hover;
+          font-size: 12px;
+        }
+      }
+      & #welcoming_introduction {
+        width: 71%;
+        margin-top: 46px;
+        & #welcoming_title {
+          text-transform: uppercase;
+          font-size: 18px;
+          letter-spacing: 2px;
+          color: $black_mineshaft;
+          font-weight: bold;
+        }
+        & p {
+          font-size: 13px;
+          color: #868686;
+          margin-top: 22px;
+          margin-bottom: 25px;
+        }
+        & img {
+          width: 35px;
+          height: 35px;
+          object-fit: cover;
+        }
+      }
     }
   }
 }

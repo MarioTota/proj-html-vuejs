@@ -85,7 +85,50 @@
           </div>
           <div id="personages">
             <div id="speakers_faces" v-for="personage in speakers">
-              <img :src="" alt="">
+              <img :src="personage.photo" alt="">
+              <div id="personage_name">{{ personage.name }}</div>
+              <div id="personage_profession"><em>{{ personage.profession }}</em></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="program">
+        <div class="wrapper">
+          <div id="program_container_top">
+            <div id="program_img">program</div>
+            <p id="program_explanation">
+              This conference run through all 4 days from 23-26 May 2016.<br>
+              We also provide free lunch and coffee break in each day.
+            </p>
+            <a href="#"><em>View Full Program</em></a>
+          </div>
+          <div id="program_container_bottom">
+            <div id="days_list">
+              <div id="program_single_day" v-for="day in programSingleDay">
+                <div id="program_day_n">{{ day.day }}</div>
+                <div id="program_day_date">{{ day.date }}</div>
+              </div>
+            </div>
+            <div id="welcoming">
+              <div id="location_apointment">
+                <div>
+                  <i class="far fa-clock"></i>
+                  <span>09:00 - 10:30</span> 
+                </div>
+                <div>
+                  <i class="fas fa-paper-plane"></i>
+                  <span>ROOM A</span>
+                </div>
+                <div>
+                  <i class="fas fa-user-alt"></i>
+                  <span>LAURENCE FRANCIS</span>
+                </div>
+              </div>
+              <div id="welcoming_introduction">
+                <div id="welcoming_title">welcoming and introduction</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <img src="images/speaker-8.jpg" alt="">
+              </div>
             </div>
           </div>
         </div>

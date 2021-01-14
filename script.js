@@ -87,6 +87,32 @@ var app = new Vue({
         name: 'angelina holy',
         profession: "Maxii's Manager"
       }
+    ],
+    programSingleDay: [
+      {
+        day: 'day 1',
+        date: '23 May 2016'
+      },
+      {
+        day: 'day 2',
+        date: '23 May 2030'
+      },
+      {
+        day: 'day 3',
+        date: '24 May 2016'
+      },
+      {
+        day: 'day 4',
+        date: '25 May 2016'
+      },
+      {
+        day: 'day 5',
+        date: '26 May 2016'
+      },
+      {
+        day: '',
+        date: ''
+      }
     ]
 	},
   methods: {
