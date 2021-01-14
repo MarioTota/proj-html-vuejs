@@ -113,6 +113,64 @@ var app = new Vue({
         day: '',
         date: ''
       }
+    ],
+    recentNews: [
+      {
+        img: 'images/tazze.jpg',
+        date: '03 Dec 2013',
+        comments: '0 Comments',
+        title: 'sedial eiusmod tempor',
+        preview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        img: 'images/tavolo.jpg',
+        date: '03 Dec 2013',
+        comments: '2 Comments',
+        title: 'donec luctus imperdiet',
+        preview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        img: 'images/speakeratpresent.jpg',
+        date: '03 Dec 2013',
+        comments: '2 Comments',
+        title: 'magna pars studiorum',
+        preview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      }
+    ],
+    ticketsOnSale: [
+      {
+        days: 'ONE DAY PASS',
+        price: 'FREE',
+        activities: [
+          'One Day Access',
+          'Coffee Break',
+          'Lunch(International Buffet)',
+          'Document Sheets',
+          '50 USD Voucher For Next Event'
+        ]
+      },
+      {
+        days: 'FOUR DAY PASSES',
+        price: '750.00 USD',
+        activities: [
+          'Four Day Access',
+          'Coffee Break',
+          'Lunch(International Buffet)',
+          'Document Sheets',
+          '100 USD Voucher For Next Event'
+        ]
+      },
+      {
+        days: 'TWO DAY PASSES',
+        price: '580.00 USD',
+        activities: [
+          'Two Day Access',
+          'Coffee Break',
+          'Lunch(International Buffet)',
+          'Document Sheets',
+          '70 USD Voucher For Next Event'
+        ]
+      }
     ]
 	},
   methods: {

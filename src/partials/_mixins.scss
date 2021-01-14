@@ -20,5 +20,14 @@
   letter-spacing: 2px;
 }
 @mixin title_small {
-
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+@mixin orange_link {
+  text-decoration: none;
+  color: #f72b0c;
+  font-size: 13px;
+  line-height: 31px
 }

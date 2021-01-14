@@ -83,9 +83,7 @@
         font-size: 13px;
       }
       & .learn_more {
-        color: $red_hover;
-        font-size: 13px;
-        text-decoration: none;
+        @include orange_link;
       }
     }
   }
@@ -283,11 +281,8 @@
       font-size: 14px;
     }
     & a {
-      text-decoration: none;
-      color: $red_hover;
       float: right;
-      font-size: 13px;
-      line-height: 34px;
+      @include orange_link;
     }
   }
   & #program_container_bottom {
@@ -426,6 +421,145 @@
         & .fas.fa-envelope {
           margin-left: 18px;
         }
+      }
+    }
+  }
+}
+#recent_news {
+  width: 100%;
+  height: 460px;
+  & #recent_news_top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    & #recent_news_img {
+      @include title_small;
+    }
+    & a {
+      @include orange_link;
+    }
+  }
+  & #recent_news_bottom {
+    display: flex;
+    justify-content: space-between;
+    & .last_news {
+      width: 263px;
+      height: 320px;
+      & .img_news {
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        cursor: pointer;
+        & .sticky_post {
+          width: 110px;
+          height: 25px;
+          background-color: $black_mineshaft;
+          color: white;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 10px;
+          letter-spacing: 1px;
+          visibility: hidden;
+          & i {
+            font-size: 10px;
+            padding-right: 2px;
+          }
+        }
+        &:hover .sticky_post {
+          visibility: visible;
+        }
+      }
+      & .news_comments {
+        margin-top: 26px;
+        margin-bottom: 13px;
+        font-size: 14px;
+        color: $grey_header;
+        & #comma {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+      & .news_title {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      & .news_preview {
+        font-size: 14px;
+        color: $grey_header;
+        padding-bottom: 10px;
+      }
+      & .news_readmore {
+        @include orange_link;
+      }
+    }
+  }
+}
+#tickets {
+  width: 100%;
+  height: 513px;
+  background-image: url('../images/personequadri.jpg');
+  background-position: center;
+  & .layover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    & .wrapper {
+      @include centramento;
+    }
+  }
+  & #ticket_title {
+    @include title_big;
+    color: white;
+    margin-bottom: 48px;
+  }
+  & #tickets_wallet {
+    display: flex;
+    justify-content: space-between;
+    & .single_ticket {
+      width: 262px;
+      height: 302px;
+      margin: 0 11px;
+      & .price_block {
+        width: 100%;
+        height: 76px;
+        background-color: #E9E9E9;
+        @include centramento;
+        font-weight: bold;
+        & .passes_days {
+          color: $black_mineshaft;
+        }
+        & .price_days {
+          color: $red_hover;
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      }
+      & .activities_block {
+        height: calc(302px - 76px - 40px);
+        background-color: white;
+        color: $grey_header;
+        @include centramento;
+        & .single_active {
+          padding: 7px 0;
+          font-size: 14px;
+        }
+      }
+      & .booknow {
+        @include centramento;
+        width: 100%;
+        height: 40px;
+        background-color: $red_hover;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        cursor: pointer;
       }
     }
   }

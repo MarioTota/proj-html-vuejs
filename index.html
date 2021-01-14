@@ -160,6 +160,49 @@
           </div>
         </div>
       </div>
+      <div id="recent_news">
+        <div class="wrapper">
+          <div id="recent_news_top">
+            <div id="recent_news_img">recent news</div>
+            <a href="#"><em>Read All News</em></a>
+          </div>
+          <div id="recent_news_bottom">
+            <div class="last_news" v-for="news in recentNews">
+              <div class="img_news" v-bind:style="{ backgroundImage:'url('+ news.img +')'}">
+                <div class="sticky_post">
+                  <i class="fas fa-bullhorn"></i>
+                  sticky post
+                </div>
+              </div>
+              <div class="news_comments"><em>{{ news.date }} <span id="comma">/</span> {{ news.comments }}</em></div>
+              <div class="news_title">{{ news.title }}</div>
+              <div class="news_preview">{{ news.preview }}</div>
+              <a href="#" class="news_readmore"><em>Read More</em></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tickets">
+        <div class="layover">
+          <div class="wrapper">
+            <div id="ticket_title">tickets</div>
+            <div id="tickets_wallet">
+              <div class="single_ticket" v-for="ticket in ticketsOnSale">
+                <div class="price_block">
+                  <div class="passes_days">{{ ticket.days }}</div>
+                  <div class="price_days">{{ ticket.price }}</div>
+                </div>
+                <div class="activities_block">
+                  <div class="single_active" v-for="active in ticket.activities">
+                    <em>{{ active }}</em> 
+                  </div>
+                </div>
+                <div class="booknow">book now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
   <script src="script.js" charset="utf-8"></script>
