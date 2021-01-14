@@ -218,19 +218,62 @@
           </div>
           <div id="twitter_block">
             <div id="twitter_title">twitter feed</div>
-            <div class="single_tweet">
+            <div class="single_tweet" v-for="tweet in twitterFeed">
               <i class="fab fa-twitter"></i>
+              <div class="text_tweet">
+                <div class="preview_tweet">
+                  {{ tweet.text }}
+                </div>
+                <div class="date_tweet">
+                  <em>{{ tweet.date }}</em>
+                </div>
+              </div>
             </div>
-            <div class="single_tweet">
-              <i class="fab fa-twitter"></i>
-            </div>
-            <div class="single_tweet">
-              <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div id="sponsors">
+        <div class="wrapper">
+          <div id="sponsors_title">sponsors</div>
+          <div id="sponsors_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            , sed do eiusmod tempor.
+          </div>
+          <div id="sponsors_container">
+            <div class="sponsors_block" v-for="block in blocks" v-bind:style="{ backgroundImage:'url('+ block +')'}">
+              <!-- <img :src="block" alt=""> -->
             </div>
           </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="wrapper">
+        <div id="footer_top">
+          <div id="about_us">
+            <h6>about us</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <div id="icons_social">
+              <div class="icon"></div>
+            </div>
+          </div>
+          <div id="recent_news">
+            <h6>recent news</h6>
+
+          </div>
+          <div id="get_seat">
+            <h6>get your seat!</h6>
+
+          </div>
+          <div id="gallery">
+            <h6>gallery from last year</h6>
+
+          </div>
+        </div>
+        <div id="footer_bottom">
+
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="script.js" charset="utf-8"></script>
 </body>

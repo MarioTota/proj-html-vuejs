@@ -588,7 +588,7 @@
 }
 #presentation {
   width: 100%;
-  height: 422px;
+  height: 373px;
   & .wrapper {
     display: flex;
     flex-direction: row;
@@ -616,10 +616,54 @@
     }
     & .single_tweet {
       width: 100%;
-      height: 56px;
+      margin-bottom: 21px;
+      display: flex;
+      font-size: 13px;
+      color: $grey_header;
       & i {
         font-size: 20px;
         color: #46BEEE;
+        margin-right: 14px;
+      }
+      & .text_tweet {
+        & .preview_tweet {
+
+        }
+        & .date_tweet {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}
+#sponsors {
+  width: 100%;
+  height: 357px;
+  background-color: #f3f3f3;
+  & .wrapper {
+    @include centramento;
+    & #sponsors_title {
+      margin-top: 65px;
+      @include title_big;
+    }
+    & #sponsors_subtitle {
+      width: 36%;
+      text-align: center;
+      margin-top: 28px;
+      margin-bottom: 48px;
+      color: $grey_header;
+      font-size: 14px;
+    }
+    & #sponsors_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      & .sponsors_block {
+        width: 117px;
+        height: 117px;
+        background-size: contain;
+        @include centramento;
       }
     }
   }

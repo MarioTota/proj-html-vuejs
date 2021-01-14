@@ -171,6 +171,28 @@ var app = new Vue({
           '70 USD Voucher For Next Event'
         ]
       }
+    ],
+    twitterFeed: [
+      {
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>@Envato</span> sed do eiusmod tempor incididunt ut labore et dolore magna ali...<span>https://bitly.com/</span>',
+        date: '3 days ago',
+      },
+      {
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna ali...<span>https://bitly.com/</span>',
+        date: '9 days ago',
+      },
+      {
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna ali...<span>https://bitly.com/</span>',
+        date: '11 days ago',
+      }
+    ],
+    blocks: [
+      'images/banner-1.jpg',
+      'images/banner-2.jpg',
+      'images/banner-3.jpg',
+      'images/banner-4.jpg',
+      'images/banner-5.jpg',
+      'images/banner-6.jpg'
     ]
 	},
   methods: {
