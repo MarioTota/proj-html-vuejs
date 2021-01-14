@@ -370,10 +370,18 @@
     }
   }
 }
+#map {
+  width: 100%;
+  height: 338px;
+  & iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
 #location_building {
   width: 100%;
   height: 343px;
-  border-top: 9px solid green;
+  border-top: 9px solid white;
   background-image: url('https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square.jpg');
   opacity: 1;
   & .layover {
@@ -532,6 +540,8 @@
         background-color: #E9E9E9;
         @include centramento;
         font-weight: bold;
+        position: relative;
+        overflow: hidden;
         & .passes_days {
           color: $black_mineshaft;
         }
@@ -539,6 +549,18 @@
           color: $red_hover;
           font-size: 14px;
           margin-top: 5px;
+        }
+        & .featured {
+          width: 97px;
+          height: 25px;
+          background-color: $red_hover;
+          position: absolute;
+          transform: rotate(42deg);
+          right: -24px;
+          top: 8px;
+          color: white;
+          font-size: 10px;
+          @include centramento;
         }
       }
       & .activities_block {

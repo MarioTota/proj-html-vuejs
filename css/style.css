@@ -484,10 +484,19 @@ header .wrapper nav i:hover {
      object-fit: cover;
 }
 
+#map {
+  width: 100%;
+  height: 338px;
+}
+#map iframe {
+  width: 100%;
+  height: 100%;
+}
+
 #location_building {
   width: 100%;
   height: 343px;
-  border-top: 9px solid green;
+  border-top: 9px solid white;
   background-image: url("https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square.jpg");
   opacity: 1;
 }
@@ -678,6 +687,8 @@ header .wrapper nav i:hover {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  position: relative;
+  overflow: hidden;
 }
 #tickets #tickets_wallet .single_ticket .price_block .passes_days {
   color: #272727;
@@ -686,6 +697,21 @@ header .wrapper nav i:hover {
   color: #f72b0c;
   font-size: 14px;
   margin-top: 5px;
+}
+#tickets #tickets_wallet .single_ticket .price_block .featured {
+  width: 97px;
+  height: 25px;
+  background-color: #f72b0c;
+  position: absolute;
+  transform: rotate(42deg);
+  right: -24px;
+  top: 8px;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #tickets #tickets_wallet .single_ticket .activities_block {
   height: calc(302px - 76px - 40px);
