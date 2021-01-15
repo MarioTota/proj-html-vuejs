@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
@@ -58,11 +60,11 @@
       <div id="countdown">
         <div class="wrapper">
           <div id="days_hours">
-            <div class="days">
+            <div class="blocconumero">
               <div class="number">3399</div>
               <div class="text_number">days</div>
             </div>
-            <div class="hours_mins_secs" v-for="block_countdown in numbersOfCountdown">
+            <div class="blocconumero" v-for="block_countdown in numbersOfCountdown">
               <div class="number">{{ block_countdown.number }}</div>
               <div class="text_number">{{ block_countdown.textNumber }}</div>
             </div>
@@ -110,9 +112,9 @@
           </div>
           <div id="program_container_bottom">
             <div id="days_list">
-              <div id="program_single_day" v-for="day in programSingleDay">
-                <div id="program_day_n">{{ day.day }}</div>
-                <div id="program_day_date">{{ day.date }}</div>
+              <div class="program_single_day" v-for="day in programSingleDay">
+                <div class="program_day_n">{{ day.day }}</div>
+                <div class="program_day_date">{{ day.date }}</div>
               </div>
             </div>
             <div id="welcoming">
@@ -243,8 +245,8 @@
       </div>
     </main>
     <footer>
-      <div class="wrapper">
-        <div id="footer_top">
+      <div id="footer_top">
+        <div class="wrapper">
           <div id="about_us">
             <h6>about us</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
@@ -273,8 +275,16 @@
             </div>
           </div>
         </div>
-        <div id="footer_bottom">
-
+      </div>
+      <div id="footer_bottom">
+        <div class="wrapper">
+          <div>&#169; Copyright GoodLayers, All Right Reserved</div>
+          <div>
+            <a href="#">About Us</a> |
+            <a href="#">Accomodation</a> |
+            <a href="#">Call For Paper</a> |
+            <a href="#">Contact Us</a>
+          </div>
         </div>
       </div>
     </footer>
