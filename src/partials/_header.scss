@@ -4,6 +4,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
   & .wrapper {
     display: flex;
     align-items: center;
@@ -20,6 +23,7 @@ header {
       align-items: baseline;
       margin-top: 12px;
       & a {
+        cursor: pointer;
         text-transform: uppercase;
         font-size: 9px;
         text-decoration: none;

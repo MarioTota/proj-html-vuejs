@@ -40,6 +40,7 @@ footer {
             font-size: 13px;
             overflow: hidden;
             @include centramento;
+            cursor: pointer;
           }
           & .icon:last-child {
             font-size: 23px;
@@ -62,6 +63,9 @@ footer {
             opacity: 0.3;
             font-size: 10px;
             color: white;
+            &:hover {
+              opacity: 1;
+            }
           }
         }
       }

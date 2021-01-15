@@ -29,6 +29,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
 }
 header .wrapper {
   display: flex;
@@ -48,6 +51,7 @@ header .wrapper nav {
   margin-top: 12px;
 }
 header .wrapper nav a {
+  cursor: pointer;
   text-transform: uppercase;
   font-size: 9px;
   text-decoration: none;
@@ -190,6 +194,9 @@ header .wrapper nav i:hover {
   color: #f72b0c;
   font-size: 13px;
   line-height: 31px;
+}
+#who_we_are .who_what_why .text_who .learn_more:hover {
+  text-decoration: underline;
 }
 
 #countdown {
@@ -415,6 +422,9 @@ header .wrapper nav i:hover {
   font-size: 13px;
   line-height: 31px;
 }
+#program #program_container_top a:hover {
+  text-decoration: underline;
+}
 #program #program_container_bottom {
   width: 100%;
   height: 268px;
@@ -606,6 +616,9 @@ header .wrapper nav i:hover {
   font-size: 13px;
   line-height: 31px;
 }
+#recent_news #recent_news_top a:hover {
+  text-decoration: underline;
+}
 #recent_news #recent_news_bottom {
   display: flex;
   justify-content: space-between;
@@ -673,6 +686,9 @@ header .wrapper nav i:hover {
   font-size: 13px;
   line-height: 31px;
   letter-spacing: 1px;
+}
+#recent_news #recent_news_bottom .last_news .news_readmore:hover {
+  text-decoration: underline;
 }
 
 #tickets {
@@ -858,6 +874,7 @@ header .wrapper nav i:hover {
   width: 117px;
   height: 117px;
   background-size: contain;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -912,6 +929,7 @@ footer #footer_top .wrapper #about_us #icons_social .icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 footer #footer_top .wrapper #about_us #icons_social .icon:last-child {
   font-size: 23px;
@@ -932,6 +950,9 @@ footer #footer_top .wrapper #recent_news .single_news span:last-child {
   opacity: 0.3;
   font-size: 10px;
   color: white;
+}
+footer #footer_top .wrapper #recent_news .single_news span:last-child:hover {
+  opacity: 1;
 }
 footer #footer_top .wrapper #get_seat .btn_subscribe {
   width: 128px;

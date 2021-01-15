@@ -15,9 +15,9 @@
   <div id="root">
     <header>
       <div class="wrapper">
-        <img src="images/logo.png" alt="">
+        <img src="images/logo.png" alt="" @click='functionReload'>
         <nav>
-          <a v-for="navName in linkHeader" :href="navName.link">
+          <a v-for="navName in linkHeader" @click="handleSelectItem(navName)" @click="functionReload">
             <span class="name">{{ navName.name }}</span>
             <span class="active"></span>
           </a>
@@ -257,8 +257,8 @@
           <div id="recent_news">
             <h6>recent news</h6>
             <div class="single_news" v-for="news in listNews">
-              <span class="fas fa-chevron-right"></span>
-              <a href="#"><span>{{ news }}</span></a>
+              <span class="fas fa-chevron-right" class="hover"></span>
+              <a href="#" class="hover"><span>{{ news }}</span></a>
             </div>
           </div>
           <div id="get_seat">

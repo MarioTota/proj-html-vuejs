@@ -83,6 +83,9 @@
       }
       & .learn_more {
         @include orange_link;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -284,6 +287,9 @@
     & a {
       float: right;
       @include orange_link;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   & #program_container_bottom {
@@ -458,6 +464,9 @@
     }
     & a {
       @include orange_link;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   & #recent_news_bottom {
@@ -522,6 +531,9 @@
       & .news_readmore {
         @include orange_link;
         letter-spacing: 1px;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -680,6 +692,7 @@
         width: 117px;
         height: 117px;
         background-size: contain;
+        cursor: pointer;
         @include centramento;
       }
     }
