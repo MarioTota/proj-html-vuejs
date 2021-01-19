@@ -150,8 +150,9 @@ var app = new Vue({
     ],
     twitterFeed: [
       {
+        messaggioRosso: '<span v-html="ciao">ciao</span>',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. @Envato sed do eiusmod tempor incididunt ut labore et dolore magna ali...https://bitly.com/',
-        date: '3 days ago',
+        date: '3 days ago'
       },
       {
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna ali...https://bitly.com/',

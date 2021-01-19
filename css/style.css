@@ -93,7 +93,7 @@ header .wrapper nav i:hover {
 
 #jumbotron {
   width: 100%;
-  height: 450px;
+  height: 510px;
   background-image: url("../images/slider-1-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -113,7 +113,7 @@ header .wrapper nav i:hover {
 }
 #jumbotron #text_jumbotron #conference_on {
   font-size: 41px;
-  margin-top: 103px;
+  margin-top: 170px;
   margin-bottom: 15px;
 }
 #jumbotron #text_jumbotron #social_networks {
@@ -532,16 +532,11 @@ header .wrapper nav i:hover {
   width: 100%;
   height: 343px;
   border-top: 9px solid white;
-  background-image: url("https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square.jpg");
-  opacity: 1;
-}
-#location_building .layover {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url("../images/location-bg.jpg");
+  background-position: right;
   color: white;
 }
-#location_building .layover #location_container {
+#location_building #location_container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -549,14 +544,14 @@ header .wrapper nav i:hover {
   align-items: center;
   justify-content: center;
 }
-#location_building .layover #location_container #location_img {
+#location_building #location_container #location_img {
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 900;
   letter-spacing: 2px;
-  margin-top: 41px;
+  margin-top: 30px;
 }
-#location_building .layover #location_container h3 {
+#location_building #location_container h3 {
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 900;
@@ -565,33 +560,33 @@ header .wrapper nav i:hover {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-#location_building .layover #location_container #position_gd_building {
+#location_building #location_container #position_gd_building {
   font-size: 13px;
   opacity: 0.8;
 }
-#location_building .layover #location_container #position_gd_building i {
+#location_building #location_container #position_gd_building i {
   font-size: 11px;
   margin-right: 7px;
 }
-#location_building .layover #location_container #check_for_accomodation {
+#location_building #location_container #check_for_accomodation {
   color: #f72b0c;
   margin-top: 19px;
   margin-bottom: 28px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0.7;
 }
-#location_building .layover #location_container #contacts_gd_building {
+#location_building #location_container #contacts_gd_building {
   border-top: 2px solid white;
   padding-top: 5px;
-  font-size: 13px;
+  font-size: 12px;
   opacity: 0.8;
 }
-#location_building .layover #location_container #contacts_gd_building i {
+#location_building #location_container #contacts_gd_building i {
   font-size: 10px;
   margin-right: 7px;
 }
-#location_building .layover #location_container #contacts_gd_building .fas.fa-envelope {
+#location_building #location_container #contacts_gd_building .fas.fa-envelope {
   margin-left: 18px;
 }
 
@@ -786,6 +781,10 @@ header .wrapper nav i:hover {
   cursor: pointer;
 }
 
+.ciao {
+  color: red;
+}
+
 #presentation {
   width: 100%;
   height: 373px;
@@ -794,6 +793,7 @@ header .wrapper nav i:hover {
   display: flex;
   flex-direction: row;
   margin-top: 55px;
+  width: 58%;
 }
 #presentation #presentation_block {
   width: 50%;
@@ -812,6 +812,9 @@ header .wrapper nav i:hover {
   float: right;
   margin-right: 40px;
   background-image: url("images/schermo.jpg");
+}
+#presentation #twitter_block {
+  width: 50%;
 }
 #presentation #twitter_block #twitter_title {
   text-transform: uppercase;
